@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { TvShowAPI } from "./api/tv-show";
+import { Logo } from "./components/Logo/Logo";
 import { TvShowDetail } from "./components/TvShowDetail/TvShowDetail";
 import { BACKDROP_BASE_URL } from "./config";
 import s from "./style.module.css";
+import logoImage from "./assets/images/logo.png";
 
 export function App() {
   const [currentTvShow, setCurrentTvShow] = useState();
@@ -32,8 +34,11 @@ export function App() {
       <div className={s.header}>
         <div className="row">
           <div className="col-4">
-            <div>LOGO</div>
-            <div>Subtitle</div>
+            <Logo
+              image={logoImage}
+              title="WhatToWatch"
+              subtitle="WhatToWatch COE"
+            />
           </div>
           <div className="col-md-12 col-lg-4">
             <input style={{ width: "100%" }} type="text" />
