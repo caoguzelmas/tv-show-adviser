@@ -1,6 +1,5 @@
 import axios from "axios";
 import { BASE_URL, API_KEY } from "../config";
-import { FAKE_POPULARS } from "./fake-data";
 
 export class TvShowAPI {
   static async fetchPopulars() {
