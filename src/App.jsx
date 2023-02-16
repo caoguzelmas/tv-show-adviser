@@ -5,7 +5,6 @@ import { TvShowDetail } from "./components/TvShowDetail/TvShowDetail";
 import { BACKDROP_BASE_URL } from "./config";
 import s from "./style.module.css";
 import logoImage from "./assets/images/logo.png";
-import { TvShowListItem } from "./components/TvShowListItem/TvShowListItem";
 import { TvShowList } from "./components/TvShowList/TvShowList";
 import { SearchBar } from "./components/SearchBar/SearchBar";
 
